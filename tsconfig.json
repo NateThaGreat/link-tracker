@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es6", // Specify the target version of JavaScript to transpile to
+    "module": "commonjs", // Specify the module format of the output files
+    "outDir": "dist", // Specify the directory where transpiled files should be saved
+    "rootDir": "src", // Specify the directory where source files are located
+    "sourceMap": true, // Generate source maps for the transpiled files
+    "strict": true, // Enable strict type-checking options
+    "esModuleInterop": true, // Enable emitting interoperability between CommonJS and ES Modules via creation of namespace objects for all imports
+    "allowJs": true, // Allow JavaScript files to be transpiled
+    "resolveJsonModule": true // Allow importing JSON files
+  },
+  "include": ["src/**/*"] // Specify which files to include in the transpilation process
+  // "exclude": ["node_modules"]     // Specify which files to exclude from the transpilation process
+}

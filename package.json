@@ -1,0 +1,27 @@
+{
+  "name": "link-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=dev DEBUG=* ts-node --transpile-only src/index.ts",
+    "start-dev": "pm2 start src/index.ts --name links-dev --interpreter ts-node --interpreter-args --transpile-only --watch --log-date-format 'YYYY-MM-DD HH:mm:ss.SSS'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@esm2cjs/normalize-url": "^8.0.0",
+    "discord.js-selfbot-v13": "^2.12.1",
+    "ethers": "^6.2.3",
+    "mongoose": "^7.0.3",
+    "normalize-url": "^8.0.0",
+    "tslog": "^4.8.2"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^18.15.10",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  }
+}
